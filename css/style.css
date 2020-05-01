@@ -1,0 +1,59 @@
+
+body{
+    background-color: rgb(167, 102, 49);
+    font-size: 1.2rem;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+}
+.navbar{
+    color: white;
+    text-align: center;
+    background-color: rgb(41, 41, 41);
+}
+.navbar-brand{
+    font-size: 2rem;
+    
+}
+.btnLarge{
+    margin-right: 2rem;
+}
+.draggable{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: wheat;
+    min-width: 250px;
+    border: 1px solid rgba(109, 95, 69, 0.5);
+    /* border-top: 1rem solid rgb(245, 193, 98); */
+    padding: 0;
+}
+.draggable p{
+    margin: 0;
+    text-align: center;
+    background-color: rgb(245, 193, 98);
+}
+.draggable span{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.draggable textarea{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px;
+    border: none;
+    background-color: wheat;
+    min-width: 300px;
+    min-height: 170px;
+    font-size: 1.2rem;
+    resize: both;
+}
+.draggable textarea:focus{
+    outline-width: 3px;
+}
+.userImage{
+    width: 500px;
+}
+ul.navbar-nav li{
+    display:flex;
+    align-items: center;
+}
