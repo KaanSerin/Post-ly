@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
-    <title>Note-ly</title>
+    <title>Post-ly</title>
 </head>
 
 <body>
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand ml-3" href="/">Note-ly</a>
+        <a class="navbar-brand ml-3" href="/">Post-ly <img class="logoImg" src="imgs/pen.svg"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -23,7 +23,7 @@
         <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <button id="makeNote" class="btn btnLarge btn-warning">Make A Note</button>
+                    <button id="makeNote" class="btn btnLarge btn-warning">New Note</button>
                 </li>
                 <li class="nav-item">
                     <label class="mb-0 mr-3" for="uploadImage">Upload Image: </label>
@@ -32,12 +32,15 @@
             </ul>
         </div>
     </nav>
+
     <div class="draggable">
         <p>Note<span class="close" onclick="this.parentElement.parentElement.remove()">X</span></p>
-        <textarea classcols="30" rows="10"></textarea>
+        <textarea classcols="30" rows="5"></textarea>
     </div>
 
 
+    <!-- Interact.js -->
+    <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
     <!-- Bootstrap -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

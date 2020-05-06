@@ -1,6 +1,7 @@
 
 body{
-    background-color: rgb(167, 102, 49);
+    background-image: url("/imgs/woodBackground.jpg");
+    background-size: 40%;
     font-size: 1.2rem;
     margin: 0;
     font-family: 'Indie Flower', cursive;
@@ -11,8 +12,11 @@ body{
     background-color: rgb(41, 41, 41);
 }
 .navbar-brand{
-    font-size: 2rem;
-    
+    font-size: 2.5rem;
+    /* opacity: 0; */
+}
+.logoImg{
+    width: 60px;
 }
 .btnLarge{
     margin-right: 2rem;
@@ -21,8 +25,9 @@ body{
     display: flex;
     flex-direction: column;
     position: absolute;
+    z-index: 1;
     background-color: wheat;
-    min-width: 250px;
+    min-width: 200px;
     border: 1px solid rgba(109, 95, 69, 0.5);
     /* border-top: 1rem solid rgb(245, 193, 98); */
     padding: 0;
@@ -42,9 +47,9 @@ body{
     padding: 5px;
     border: none;
     background-color: wheat;
-    min-width: 300px;
+    min-width: 200px;
     min-height: 170px;
-    font-size: 1.2rem;
+    font-size: 1rem;
     resize: both;
 }
 .draggable textarea:focus{
@@ -52,6 +57,10 @@ body{
 }
 .userImage{
     width: 500px;
+    touch-action: none;
+  user-select: none;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
 }
 ul.navbar-nav li{
     display:flex;
