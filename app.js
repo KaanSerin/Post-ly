@@ -1,3 +1,4 @@
+document.cookie = 'same-site-cookie=foo; SameSite=Lax';
 var makeNote = $("#makeNote");
 var uploadImage = $("#uploadImage");
 var textAreaDraggable = '<div class="draggable"><p>Note<span class="close" onclick="this.parentElement.parentElement.remove()">X</span></p><textarea classcols="30" rows="5"></textarea></div>';
